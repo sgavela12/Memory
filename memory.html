@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Memoria</title>
+    <script src="memory.js" defer></script>
+    <link rel="stylesheet" href="memory.css">
+</head>
+<body>
+    <header>
+        <a href="/portfolio/projects" id="backButton">Volver al Portfolio</a>
+    </header>
+    <main>
+        <!-- Formulario para el nombre del usuario -->
+        <section id="formularioNombre">
+            <h2>¿Primera vez en el juego?</h2>
+            <form>
+                <label for="nombre">Introduce tu nombre:</label>
+                <input type="text" name="nombre" id="nombre">
+                <button id="aceptarNombre">Aceptar</button>
+            </form>
+        </section>
+
+        <!-- Juego de memoria -->
+        <section id="juego">
+            <h2 id="mensajeNombre"></h2>
+            <h3 id="vecesJugadas"></h3>
+            <h3 id="numeroAciertos">Número de Aciertos: 0</h3>
+            <h3 id="numeroErrores">Número de Errores: 0</h3>
+            <h2 id="mensajeGanado"></h2>
+            <button id="restart">Volver a empezar</button>
+            <table>
+                <tr>
+                    <td><button id="button1"><img src="carta.jpg" alt=""></button></td>
+                    <td><button id="button2"><img src="carta.jpg" alt=""></button></td>
+                    <td><button id="button3"><img src="carta.jpg" alt=""></button></td>
+                    <td><button id="button4"><img src="carta.jpg" alt=""></button></td>
+                </tr>
+                <tr>
+                    <td><button id="button5"><img src="carta.jpg" alt=""></button></td>
+                    <td><button id="button6"><img src="carta.jpg" alt=""></button></td>
+                    <td><button id="button7"><img src="carta.jpg" alt=""></button></td>
+                    <td><button id="button8"><img src="carta.jpg" alt=""></button></td>
+                </tr>
+                <tr>
+                    <td><button id="button9"><img src="carta.jpg" alt=""></button></td>
+                    <td><button id="button10"><img src="carta.jpg" alt=""></button></td>
+                    <td><button id="button11"><img src="carta.jpg" alt=""></button></td>
+                    <td><button id="button12"><img src="carta.jpg" alt=""></button></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
